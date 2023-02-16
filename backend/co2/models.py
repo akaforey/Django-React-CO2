@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class CO2(models.Model):
+class SensorReading(models.Model):
     timestamp = models.DateTimeField()
     co2_reading = models.PositiveIntegerField()
 

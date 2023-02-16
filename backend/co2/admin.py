@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import CO2
+from .models import SensorReading
 # Register your models here.
 
 
-class CO2Admin(admin.ModelAdmin):
+class SensorReadingAdmin(admin.ModelAdmin):
     list_display = ('timestamp', 'co2_reading')
 
-admin.site.register(CO2, CO2Admin)
+admin.site.register(SensorReading, SensorReadingAdmin)
